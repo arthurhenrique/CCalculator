@@ -14,7 +14,6 @@ int main(int argc, char **argv)
 
     delete calculator;
 
-
     int stop;
     cin >> stop;
 }
