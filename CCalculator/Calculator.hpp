@@ -2,10 +2,14 @@
 class CCalculator
 {
 public:
-    double Sum(double val1, double val2);
-    double Subtract(double val1, double val2);
-    double Division(double val1, double val2);
-    double Multiply(double val1, double val2);
+    template <typename TypeCalculator>
+    double Sum(TypeCalculator val1, TypeCalculator val2);
+    template <typename TypeCalculator>
+    double Subtract(TypeCalculator val1, TypeCalculator val2);
+    template <typename TypeCalculator>
+    double Division(TypeCalculator val1, TypeCalculator val2);
+    template <typename TypeCalculator>
+    double Multiply(TypeCalculator val1, TypeCalculator val2);
     CCalculator();
     ~CCalculator();
 };
